@@ -1,0 +1,251 @@
+body {
+  margin: 0px;
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  position: absolute;
+  letter-spacing: 5px;
+  left: 100px;
+}
+#salt-space,
+#pepper-space {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  top: 30px;
+}
+#salt-space {
+  /* opacity: 0.25; background: red; */
+  left: 30px;
+}
+#pepper-space {
+  /* opacity: 0.25; background: blue; */
+  right: 30px;
+}
+
+/*
+*
+*
+*
+*
+* 
+BODY CONTAINERS 
+SALT PART
+*
+*
+*
+*
+*
+*/
+#salt-body {
+  position: absolute;
+  background: #d9d2b6;
+  width: 100px;
+  height: 150px;
+  top: 140px;
+  left: 200px;
+  border-radius: 30% 30% 5px 5px;
+}
+#salt-head {
+  position: absolute;
+  background: #153243;
+  width: 50px;
+  height: 20px;
+  top: 119px;
+  left: 225px;
+  border-radius: 5px;
+}
+#salt-head-2 {
+  position: absolute;
+  background: #a30000;
+  width: 60px;
+  height: 30px;
+  top: 88px;
+  left: 220px;
+  border-radius: 30% 30% 0 0;
+}
+.salt-head-circle {
+  background: #d9d2b6;
+  width: 15%;
+  height: 5px;
+  border-radius: 100%;
+  margin: 0px 3px 15px 3px;
+}
+#tagSalt {
+  position: absolute;
+  background: #a30000;
+  color: #d9d2b6;
+  letter-spacing: 5px;
+  width: 100px;
+  height: 30px;
+  top: 200px;
+  left: 200px;
+}
+/* 
+ANIMATION PART
+*/
+@keyframes move_salt {
+  50% {
+    transform: translate(280px, 10px) rotate(80deg);
+  }
+}
+#salt-particles-space {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  top: 450px;
+  left: 600px;
+  opacity: 0;
+  border-radius: 30%;
+}
+@keyframes fallingSalt {
+  0% {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+}
+/* 
+SALT PARTICLES
+I wanted them to have different shapes to look more realistic 
+*/
+.salt-particles1 {
+  display: inline-block;
+  background-color: lightcyan;
+  width: 3px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 2px 3px 0px 1px;
+}
+.salt-particles2 {
+  display: inline-block;
+  background-color: lightcyan;
+  width: 2px;
+  height: 4px;
+  border-radius: 100%;
+  margin: 4px;
+}
+.salt-particles3 {
+  display: inline-block;
+  background-color: lightcyan;
+  width: 1px;
+  height: 3px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+/* 
+*
+*
+*
+*
+*
+BODY CONTAINERS 
+PEPPER PART
+*
+*
+*
+*
+*
+*/
+#pepper-body {
+  position: absolute;
+  background: #153243;
+  width: 100px;
+  height: 150px;
+  top: 140px;
+  right: 200px;
+  border-radius: 30% 30% 5px 5px;
+}
+#pepper-head {
+  position: absolute;
+  background: #a30000;
+  width: 50px;
+  height: 20px;
+  top: 119px;
+  right: 225px;
+  border-radius: 5px;
+}
+#pepper-head-2 {
+  position: absolute;
+  background: #daa785;
+  width: 60px;
+  height: 30px;
+  top: 88px;
+  right: 220px;
+  border-radius: 30% 30% 0 0;
+}
+.pepper-head-circle {
+  background: #71697a;
+  width: 15%;
+  height: 5px;
+  border-radius: 100%;
+  margin: 0px 3px 15px 3px;
+}
+#tagPepper {
+  position: absolute;
+  background: #daa785;
+  color: #153243;
+  letter-spacing: 5px;
+  width: 100px;
+  height: 30px;
+  top: 200px;
+  right: 200px;
+}
+/* ANIMATION */
+@keyframes move_pepper {
+  50% {
+    transform: translate(-280px, 10px) rotate(-80deg);
+  }
+}
+#pepper-particles-space {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  top: 450px;
+  right: 600px;
+  opacity: 0;
+  border-radius: 30%;
+}
+@keyframes fallingPepper {
+  0% {
+    opacity: 1;
+    transform: translateY(-200px);
+  }
+}
+/* 
+SALT PARTICLES
+I wanted them to have different shapes to look more realistic 
+*/
+.pepper-particles1 {
+  display: inline-block;
+  background-color: rgb(58, 67, 77);
+  width: 3px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 2px 3px 0px 1px;
+}
+.pepper-particles2 {
+  display: inline-block;
+  background-color: rgb(58, 67, 77);
+  width: 2px;
+  height: 4px;
+  border-radius: 100%;
+  margin: 4px;
+}
+.pepper-particles3 {
+  display: inline-block;
+  background-color: rgb(58, 67, 77);
+  width: 1px;
+  height: 3px;
+  border-radius: 100%;
+  margin: 5px;
+}
